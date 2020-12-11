@@ -29,6 +29,6 @@ while 1:
     conn, addr = s.accept()
     print('Connect with ' + addr[0] + ':' + str(addr[1]))
     buf = conn.recv(64)
-    print(buf)
+    print(buf.decode('utf-8'))
 s.close()
  

@@ -8,7 +8,7 @@ for args in sys.argv:
     if args == "":
         args = "no args"
     else:
-        byt=args.encode()
+        byt= sys.argv[1].encode()
         #s.send(args)
         s.send(byt)
  

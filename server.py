@@ -28,7 +28,7 @@ print('Socket is now listening')
 while 1:
     conn, addr = s.accept()
     print('Connect with ' + addr[0] + ':' + str(addr[1]))
-    buf = conn.recv(64)
+    buf = conn.recv(1024)
     print(buf.decode("utf-8"))
 s.close()
  
